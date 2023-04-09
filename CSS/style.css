@@ -643,7 +643,6 @@ img {
   width: 408px;
   height: 576px;
   background-color: #fcfcfc;
-  /* padding-top: 72px; */
 }
 
 .modal-close-btn {
@@ -671,7 +670,7 @@ img {
 .modal-close-btn-icon {
   transition: fill var(--transition-dur-fun);
 }
-
+/* ---------------------MODAL FORM----------------- */
 .contact-form {
   width: 100%;
   height: 100%;
@@ -696,6 +695,10 @@ img {
 }
 
 .modal-lable-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .contact-form-input {
@@ -704,6 +707,15 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  outline: transparent;
+}
+
+.contact-form-input:focus {
+  border-color: #404bbf;
+}
+
+.contact-form-input:focus + .contact-form-input-icon {
+  fill: #404bbf;
 }
 
 .contact-form-input-icon {
@@ -719,6 +731,17 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  background-color: transparent;
+  outline: transparent;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-textarea:focus {
+  border: 1px solid #404bbf;
 }
 
 .contact-form-accept-title {
@@ -741,4 +764,10 @@ img {
   border-radius: 4px;
   color: #ffffff;
   margin: 0 auto;
+  outline: transparent;
+}
+
+.form-btn-send:hover,
+.form-btn-send:focus {
+  background-color: #404bbf;
 }

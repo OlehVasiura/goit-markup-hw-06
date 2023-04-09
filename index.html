@@ -457,47 +457,61 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <!----------------------------- MODAL FORM ------------------------->
         <form class="contact-form">
           <p class="contact-form-title">
             Leave your contacts and we will call you back
           </p>
           <div class="contact-form-field">
-            <label for="" class="modal-lable-text">Name</label>
+            <label for="user-name" class="modal-lable-text">Name</label>
             <input
               type="text"
               class="contact-form-input"
-              placeholder="name"
+              placeholder=""
               name="user-name"
+              id="user-name"
             />
             <svg class="contact-form-input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp"></use>
             </svg>
           </div>
           <div class="contact-form-field">
-            <label for="" class="modal-lable-text">Phone</label>
+            <label for="user-phone" class="modal-lable-text">Phone</label>
             <input
               type="phone"
               class="contact-form-input"
-              placeholder="phone"
+              placeholder=""
               name="user-phone"
+              id="user-phone"
             />
             <svg class="contact-form-input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black-18dp"></use>
             </svg>
           </div>
           <div class="contact-form-field">
-            <label for="" class="modal-lable-text">Email</label>
+            <label for="user-e-mail" class="modal-lable-text">Email</label>
             <input
               type="email"
               class="contact-form-input"
-              placeholder="email"
+              placeholder=""
               name="user-email"
+              id="user-e-mail"
             />
             <svg class="contact-form-input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black-18dp"></use>
             </svg>
           </div>
-          <textarea name="" id="" class="contact-form-textarea"></textarea>
+
+          <div class="contact-form-field">
+            <label for="user-comment" class="modal-lable-text">Comment</label>
+            <textarea
+              class="contact-form-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
           <input type="checkbox" name="" id="" />
           <p class="contact-form-accept-title">
             I accept the terms and conditions of the Privacy Policy
