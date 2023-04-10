@@ -690,7 +690,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* margin-top: 72px; */
   margin-bottom: 20px;
 }
 
@@ -708,6 +707,7 @@ img {
   border-radius: 4px;
   padding-left: 38px;
   outline: transparent;
+  transition: border-color var(--transition-dur-fun);
 }
 
 .contact-form-input:focus {
@@ -722,7 +722,8 @@ img {
   position: absolute;
   left: 16px;
   top: 50%;
-  transformy: transform(-50%);
+  translate: transform(-50%);
+  transition: fill var(--transition-dur-fun);
 }
 
 .contact-form-textarea {
@@ -737,20 +738,46 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: rgba(117, 117, 117, 0.5);
+  transition: border var(--transition-dur-fun);
 }
 
 .contact-form-textarea:focus {
   border: 1px solid #404bbf;
 }
 
+.contact-form-chek {
+}
+
 .contact-form-accept-title {
-  display: inline-block;
+  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.contact-form-accept-title::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.contact-form-chek:checked + .contact-form-accept-title::before {
+  background-color: #404bbf;
+  background-image: url(../images/Vector-bird.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-form-chek:focus + .contact-form-accept-title::before {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
 .form-btn-send {
