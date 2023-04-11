@@ -767,6 +767,7 @@ img {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  transition: background-color var(--transition-dur-fun);
 }
 
 .contact-form-chek:checked + .contact-form-accept-title::before {
