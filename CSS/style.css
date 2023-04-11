@@ -786,16 +786,16 @@ img {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.contact-form-accept-link {
-  color: var(--accent);
-}
-
 .contact-form-chek-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   margin-bottom: 24px;
+}
+
+.contact-form-accept-link {
+  color: var(--accent);
 }
 
 .form-btn-send {
