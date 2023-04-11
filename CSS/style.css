@@ -761,7 +761,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 
 .contact-form-accept-title::before {
@@ -795,6 +794,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  margin-bottom: 24px;
 }
 
 .form-btn-send {
