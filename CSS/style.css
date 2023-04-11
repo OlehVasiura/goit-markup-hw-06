@@ -375,6 +375,7 @@ img {
 
 .customers-item-link:focus {
   border: 1px solid #404bbf;
+  outline: transparent;
 }
 
 /*----------------- Footer------------ */
