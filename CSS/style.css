@@ -462,6 +462,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -644,6 +645,7 @@ img {
   width: 408px;
   height: 576px;
   background-color: #fcfcfc;
+  border-radius: 4px;
 }
 
 .modal-close-btn {
@@ -660,6 +662,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   transition: background-color var(--transition-dur-fun);
+  cursor: pointer;
 }
 
 .modal-close-btn:hover,
@@ -699,6 +702,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .contact-form-input {
@@ -708,6 +712,7 @@ img {
   border-radius: 4px;
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
   transition: border-color var(--transition-dur-fun);
 }
 
@@ -780,6 +785,16 @@ img {
 
 .contact-form-chek:focus + .contact-form-accept-title::before {
   outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.contact-form-accept-link {
+  color: var(--accent);
+}
+
+.contact-form-chek-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-btn-send {
